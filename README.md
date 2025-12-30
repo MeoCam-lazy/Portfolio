@@ -1,6 +1,6 @@
 # 🚀 My First Portfolio
-https://kh0a.netlify.app/
-Chào mừng bạn đến với dự án đầu tay trong hành trình học Front-end của mình! Đây không chỉ là một trang web giới thiệu bản thân mà còn là dấu ấn riêng trên hành trình phát triển của mình.
+
+Chào mừng bạn đến với dự án đầu tay trong hành trình học Front-end của mình! Đây không chỉ là một trang web giới thiệu bản thân mà còn là dấu ấn riêng trên hành trình phát triển của mình: https://kh0a.netlify.app/ 
 
 ## 🌟 Tổng quan dự án
 Đây là một trang **Single Page Application (SPA)** cơ bản, được thiết kế với phong cách tối giản, sử dụng bảng màu trầm ấm (Xám hồng & Cam pastel) để tạo cảm giác dễ chịu cho người dùng.
