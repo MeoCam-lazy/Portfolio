@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="icon" type="image/png" href="../../android-chrome-512x512.png">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url(https://cdn.pixabay.com/animation/2023/12/01/11/57/11-57-38-103_512.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container .card .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(muadong2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container .card .icon .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #fff;
+        }
+        .container .card .slide {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
+        .container .card .slide.slide1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+        .container .card:hover .slide.slide1 {
+            transform: translateY(0px);
+        }
+        .container .card .slide.slide2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: .8s;
+            transform: translateY(-100px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(4px);
+        }
+        .container .card:hover .slide.slide2 {
+            transform: translateY(0);
+        }
+        .container .card .slide.slide2 .content p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        .container .card .slide.slide2 .content h3 {
+            margin: 0 0 10px 0;
+            padding: 0;
+            font-size: 24px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes anh1 {
+            0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(0deg);
+        border-radius: 25%;
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(0deg) translateX(40px);
+    }
+    50% {
+        transform: rotate(0deg) translateX(50px);
+        border: 5px solid rgb(255, 255, 183);
+        scale: 1.1;
+        border-radius: 0%;
+    }
+    60% {
+        transform: rotate(0deg) translateX(0px);
+        border-radius: 50%;
+        scale: 1;
+    }
+    70% {
+        transform: rotate(0deg) translateX(-40px);
+    }
+    80% {
+        transform: rotate(0deg) translateX(-50px);
+        border: 5px solid rgb(187, 255, 239);
+        border-radius: 0%;
+        scale: 1.1;
+    }
+    90% {
+        transform: rotate(0deg);
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+        }
+        .icon {
+            box-shadow: 1px 1px 50px 5px #90f6ff;
+        }
+
+        /* Nút play âm thanh */
+        .play-button {
+            position: absolute;
+            top: 20px;
+            left: 5%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 15px 20px;
+            background-color: rgba(0, 168, 240, 0.7);
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 2em;
+            animation: anh2 infinite 5s 0.5s;
+            margin-left: 10px;
+        }
+        @keyframes anh2 {
+            
+            0%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .play-button:hover {
+            background-color: rgba(0, 168, 240, 0.986);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <div class="icon">
+                        <img src="Khoa1.jpg" alt="" style="width: 150px; height: 150px;border-radius: 50%; max-width: 50%; max-height: 80%; animation: anh1 infinite 5s 0.5s; border: 5px solid rgb(29, 135, 29);">
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <h3>
+                        <a href="https://www.facebook.com/share/1ASMNTqMNv/" style="text-decoration: none;">
+                            <img src="facebook-7118901_640.png" alt="" style="width: 40px; height: 40px;">
+                        </a>
+                        <br>
+                        Khoa Nguynnn
+                    </h3>
+                    <p style="font-size: 1.4em; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;"><i>Đặc Vụ Cáo Tuyết Siu Quậy 🤩</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="play-button" onclick="playAudio()">🔈</button>
+
+    <audio id="audio" loop>
+        <source src="jingle-bells-christmas-holidays-celebration-background-intro-theme-265841.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const playButton = document.querySelector('.play-button');
+        const audioElement = document.querySelector('audio');
+        
+        playButton.addEventListener('click', () => {
+            if (audioElement.paused) {
+                audioElement.play();  // Phát nhạc
+                playButton.textContent = '🔊';  // Đổi text thành "Pause"
+            } else {
+                audioElement.pause();  // Dừng nhạc
+                playButton.textContent = '🔈';  // Đổi text thành "Play"
+            }
+        });
+    </script>
+</body>
+</html>

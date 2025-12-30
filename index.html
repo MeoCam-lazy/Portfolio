@@ -1,0 +1,288 @@
+<!--Hẻllo Stảlkẻr. Náice tu mít ju^^-->
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <link rel="preload" as="image" href="Banner.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Khoa Nguyễn</title>
+        <meta name="description" content="Trang portfolio cá nhân của Khoa Nguyễn" />
+        <meta name="keywords" content="Khoa Nguyễn, Portfolio, Web Developer, Thiết kế web, Front-end" />
+        <meta name="author" content="Nguyễn Trương Văn Khoa" />
+        <!-- Ảnh favicon -->
+        <link rel="icon" type="image/png" href="android-chrome-512x512.png" />
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"> <!--THư viện icon-->
+        <!-- Facebook-->
+        <meta property="og:site_name" content="Khoa Nguyễn" />
+        <meta property="og:title" content="Khoa Nguyễn - Portfolio Website" />
+        <meta property="og:description" content="Cái acc clone bị hắt hủi của Khoa Nguyễn" />
+        <meta property="og:image" content="https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_1280.jpg" />
+        <meta property="og:url" content="https://kh0a.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <!-- Twitter-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Khoa Nguyễn - Portfolio Website" />
+        <meta name="twitter:description" content="Cái acc clone bị hắt hủi của Khoa Nguyễn" />
+        <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2023/12/08/05/41/cat-8436848_1280.jpg" />
+    </head>
+   <body>
+    <div id="intro-slide" class="slide">
+        <img src="Banner.png" style="display: none;" loading="eager" />
+        <h1 style="font-size: 3em; font-family:Verdana, Geneva, Tahoma, sans-serif;"><!--current empty--></h1>
+    </div>
+    <header class="header">
+        <a href="#home" class="logo">
+            Nguyn <span>Khoa</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="gradient-btn" onclick="scrollToContact()">Contact Me</button>
+
+        <script>
+          function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }
+        </script>
+    </header>
+     
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 id="text" translate="no">Hi, It's <span>KhoaNguynn</span></h1>
+            <br>
+            <h2 style="font-size: 2rem;">
+                I'm a <span>dreamer</span>
+            </h2>
+            <blockquote class="fun-quote">
+                <p>I can center a div <span class="note">(on the third try)</span></p>
+                <p>I make pixels dance and bugs run 💀</p>
+                <p>My dreams are filled with 404s and fun.</p>
+                <p>Still can’t fix my sleep schedule though 🥴</p>
+            </blockquote>
+            <div class="social-icons">
+                <button class="play-button" id="button-container" onclick="playAudio()">
+                    <i class='bx bxs-music'></i>
+                </button>
+        
+                <audio id="audio" loop>
+                    <source src="Piano_MyFavourite.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="https://github.com/Echeveria-XNC" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1ASMNTqMNv/" target="_blank">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/vankhoant01/" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="/Blog/blog.html" target="_blank">
+                    <i class='bx bxs-cat' ></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://www.facebook.com/share/1ASMNTqMNv/" class="btn" target="_blank">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Cat3.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Cat3.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>
+                Mình tên là <span>Khoa</span> <br>
+                Biệt danh: <span>Khoa Nguyễn</span> <br>
+                Mình hơi <span>LOWKEY</span> và <span>nhút nhát</span> một chút...<br>
+                Nhưng không phải vì <span>thiếu muối</span> đâu, tại vì mình chưa rắc thôi nè 🤩<br>
+                Mình hay cố gắng để tốt hơn mỗi ngày, dù không phải lúc nào cũng đều đặn. Nhưng mình vẫn luôn tin
+                là ngày nào đó mình sẽ làm được 🙀<br>
+
+            </p>
+            <a href="/Blog/blog.html" class="btn" target="_blank">
+                Read More
+            </a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-html5"></i>
+                    <h4>Web Development</h4>
+                    <ul>
+                        <li> Design and develop an attractive and responsive web interface</li>
+                        <li> Proficient in HTML and CSS</li>
+                        <li> Have experience in developing small projects</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-paint"></i>
+                    <h4>UI/UX Design</h4>
+                    <ul>
+                        <li>Design a clean and elegant interface with subtle colors</li>
+                        <li> Focus on user experience (UX)</li>
+                        <li> Design a visual, easy-to-use interface</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-bulb"></i>
+                    <h4>Creative Projects</h4>
+                    <ul>
+                        <li> Develop creative projects such as Snake game and profile cards</li>
+                        <li> Code with precision and patience</li>
+                        <li> Always eager to learn and improve skills</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+        
+        
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-box">
+
+            <div class="project-card">
+                <img src="/Project/Project1/muadong2.jpg" alt="Profile Card Preview">
+                <h3>Profile Card</h3>
+            <p>
+                <p><strong>Tên: </strong> Profile Card</p>
+                <p><strong>Thời gian: </strong> Mùa đông 2024</p>
+                <p><strong>Mô tả: </strong> Trang profile giới thiệu bản thân, thiết kế đơn giản và bắt mắt.</p>
+                <p><strong>Công cụ nổi bật: </strong> CSS Animation</p>
+                <p><strong>Link: </strong> <a href="/Project/Project1/Project1.html" target="_blank">Profile Card</a></p>
+            </p>
+            </div>
+
+            <div class="project-card">
+                <img src="/Project/Project2_Snake/Picture.PNG" alt="">
+                <h3>Snake Game</h3>
+                <p>
+                    <p><strong>Tên: </strong>Snake Game</p>
+                    <p><strong>Thời gian: </strong>Mùa xuân 2025</p>
+                    <p><strong>Mô tả: </strong>Một game cơ bản tương tự game rắn ăn mồi ở trên điện thoại thời xưa. 
+                        Với các logic đơn giản: Tăng kích thước nếu ăn mồi, chết nếu đụng trúng tường và thân.</p>
+                    <p><strong>Công cụ nổi bật:</strong> Javascript, basic game logic</p>
+                    <p><strong>Link: </strong> <a href="/Project/Project2_Snake/" target="_blank">Snake Game</a></p>
+                </p>
+            </div>
+            
+            <div class="project-card">
+                <img src="project3.png" alt="">
+                <h3>In Progress</h3>
+                <p>
+                    <p><strong>Tên: </strong>Đang tiến hành</p>
+                    <p><strong>Thời gian: </strong>UNKNOW</p>
+                    <p><strong>Mô tả: </strong>UNKNOW</p>
+                    <p><strong>Công cụ: </strong>UNKNOW</p>
+                    <p><strong>Link: </strong> <a href="#" target="">404 NOT FOUND</a></p>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading" >
+            Contact <span>Me</span>
+        </h2>
+
+        <form onsubmit="submitted=true;" target="hidden_iframe" class="text-left"  role="form" id="ss-form" method="GET" action="https://script.google.com/macros/s/AKfycbz-Hq4gYKqNK5jCie2KpViy_gtVerycTBNzj1_aDdVKn7f_mGj0iv6uifF-mh07w-x0/exec">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="Full Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="PhoneNumber" placeholder="Phone Number">
+                    <input type="text" name="Subject" placeholder="Your Occupation">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="Your Message" placeholder="Your Message" cols="34" rows="14" style="margin-top: 15px;"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>   
+        <script>
+            document.getElementById('ss-form').addEventListener('submit', function() {
+                setTimeout(() => {
+                    document.getElementById('ss-form').reset();
+                    alert("Đã Nhận Được Tin Nhắn Của Bạn 💌");
+                }, 500); 
+            });
+        </script>
+    </section>
+
+    <footer class="footer">
+        <div class="P2">
+            <img src="QR_bank.jpg" alt="">
+        </div>
+        <div class="P1">
+        <div class="social-icons">
+            <a href="https://github.com/Echeveria-XNC">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1ASMNTqMNv/">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="https://www.instagram.com/vankhoant01/">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a href="/Blog/blog.html">
+                <i class='bx bxs-cat' ></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Đại Sứ Sen Đá 
+        </p>
+        </div>
+    </footer>
+     <script src="script.js"></script>
+   </body>
+ </html>

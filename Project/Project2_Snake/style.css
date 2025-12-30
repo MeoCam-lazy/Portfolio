@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(trees-5537653_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(16, 43, 0);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+  }
+  
+  canvas {
+    border: 30px solid;
+    border-image: linear-gradient(to bottom, rgb(45, 91, 0), rgb(0, 118, 33)) 1;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/../../style.css">
+  <link rel="icon" type="image/png" href="../../android-chrome-512x512.png">
+  <style>
+.footer {
+    background-image: none;
+}
+
+a {
+    color: var(--main-color);
+}
+.aboutcolor{
+    padding: 100px;
+    font-size: 2rem;
+}
+.aboutcolor h2{
+    text-align: center;
+}
+.clpreview{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.post {
+    background-image: url('/../../sunset-4086848_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column; /* xếp dọc */
+    align-items: center;    /* căn giữa ngang */
+    padding: 20px 10px;
+    gap: 10px;              /* cách đều */
+    min-height: 100vh;
+}
+
+.post h2 {
+    font-size: 7rem;
+    text-align: center;
+    color: white;
+}
+
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 1000px;
+    max-width: 90%;
+    padding-bottom: 100px;
+    
+}
+.MainPage img {
+    max-width: 90%;
+    max-height: 400px;
+    display: block;
+    margin: 5px auto;
+    border-radius: 12px;
+    border: 5px solid white;
+}
+.MainPage > div {
+    background-color: #ff8b71b6;
+    padding: 20px;
+    color: var(--text-color);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+.MainPage h3 {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.MainPage p {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-indent: 2em;
+}
+button{
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 50px 50px;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Khoa's Blog</h1>
+    <nav class="navbar">
+      <a href="#posts">Posts</a>
+      <a href="https://www.facebook.com/share/1ASMNTqMNv/" target="n">Contact via facebook</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Welcome to my dreamy corner</h1>
+      <h3>Thoughts, stories, and feathers in the wind</h3>
+      <div class="btn-group">
+        <a href="#posts" class="btn">Explore Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="aboutcolor">
+    <h2>Các tông màu chủ đạo đã được sử dụng:</h2>
+    <div class="clpreview">
+      <button style="background-color: var(--main-color); color: var(--text-color);"></button>
+      <button style="background-color: var(--accent-color); color: var(--text-color);"></button>
+      <button style="background-color: var(--highlight-color); color: var(--bg-color);"></button>
+      <button style="background-color: var(--ice-color); color: var(--bg-color);"></button>
+      <button style="background-color: var(--bg-color); color: var(--text-color);"></button>
+      <button style="background-color: var(--sky-color); color: var(--text-color);"></button>
+      <button style="background-color: var(--text-color); color: var(--text-color);"></button>
+      </div>
+  </div>
+
+  <section class="post" id="posts">
+    <h2>Latest Posts</h2>
+    <div class="MainPage">
+      <!--định dạng: Trong 1 thẻ div: H3 là tiêu đề, p là nội dung-->
+    </div>
+  </section>
+
+  <footer class="footer" id="contact" >
+    <p>Made with passion by <span><b>KhoaNguynn</b></span> — Follow me on:
+      <a href="https://www.facebook.com/share/1ASMNTqMNv/">Fở Bò</a>
+    </p>
+  </footer>
+</body>
+</html>
